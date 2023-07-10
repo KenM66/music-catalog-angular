@@ -1,0 +1,55 @@
+
+
+<br/><br/><br/>
+  <div class="center">
+    <br/><h2 class="center-text">Recordings</h2><br/>
+    <input id="narrow" style="margin:auto; display: block; background-color: yellow;" (keyup)="filterSearch($event)">
+    <br/>
+    <div class="center-radio" style="text-align: center;">
+      <input type="radio"  id="title" name="filter" value="title" checked="true" (change)="checkStatus($event)"/>
+      <label for="title" >Search By Title</label>&nbsp;
+      <input type="radio"  id="artist" name="filter" value="artist"  (change)="checkStatus($event)"/>
+      <label for="title" >Search By Artist</label>&nbsp;
+      <input type="radio"  id="genre" name="filter" value="genre"  (change)="checkStatus($event)"/>
+      <label for="title" >Search By Genre</label>
+    </div>
+    
+
+    <br/><br/>
+    <div class="center-table">
+        <table style="width: 100%;">
+        <tr>
+            <th style="width: 30%">Song Title</th>
+            <th style="width: 10%">Artist</th>
+            <th style="width: 10%">Genre</th>
+            <th style="width: 10%">Sub-Genre</th>
+           
+          </tr>
+
+          <tr *ngFor="let recording of recordings">
+            <td><a href={{recording.link}} target="_blank">{{recording.title}}</a></td>
+            <td>{{recording.artist}}</td>
+            <td>{{recording.genre}}</td>
+            <td>{{recording.subGenre}}</td>
+          </tr>
+
+         
+        </table>
+
+    
+    </div>
+    <br/>
+    
+    <div class="flex-container">
+
+      <h5 class="center-text">Sort By</h5>
+      <div class="horizontal-center">
+        
+        <button class="btn btn-info" (click)="sortByTitle()">Title (A-Z)</button>&nbsp;
+        <button class="btn btn-info" (click)="sortByArtist()">Artist (A-Z)</button>&nbsp;
+        <button class="btn btn-info" (click)="sortByGenre()">Genre (A-Z)</button>
+      </div>
+     <br/><br/> <br/>
+     
+    </div>
+  </div>

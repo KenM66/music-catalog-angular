@@ -1,0 +1,10 @@
+.flex-row {
+    display: flex;
+}
+
+.song-box{
+    color: blue;
+    background-color: gray;
+    border-color: black;
+    border-style: solid;
+}
