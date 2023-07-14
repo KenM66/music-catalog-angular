@@ -1,14 +1,19 @@
 
 <br/><br/>
 
-Ken Milota's Song Recordings Catalog
+<div style="text-align: center;">
+  <h1>Ken Milota's Song Recordings Catalog</h1>
+  
+</div>
+
+
 
 <br/><br/><br/>
   <div class="center">
     <br/><h2 class="center-text">Recordings</h2><br/>
-    <input id="narrow" style="margin:auto; display: block; background-color: yellow;" (keyup)="filterSearch($event)">
+    <input id="narrow" style="margin:auto; display: block; background-color:lightgreen; color: purple" (keyup)="filterSearch($event)">
     <br/>
-    <div class="center-radio" style="text-align: center;">
+    <div class="center-radio" style="text-align: center; background-color: black; color: white;">
       <input type="radio"  id="title" name="filter" value="title" checked="true" (change)="checkStatus($event)"/>
       <label for="title" >Search By Title</label>&nbsp;
       <input type="radio"  id="artist" name="filter" value="artist"  (change)="checkStatus($event)"/>
