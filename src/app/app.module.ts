@@ -7,6 +7,8 @@ import { RecordingComponent } from './components/recording/recording.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RecordingsContainerComponent } from './components/recordings-container/recordings-container.component';
 import { HttpClientModule } from '@angular/common/http';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { 
 
 
