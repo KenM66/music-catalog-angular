@@ -7,24 +7,20 @@
     padding: 10px;
     background-color: beige;
     overflow: auto;
+    
   }
 
   h1{
     text-align: center;
   }
 
-  .directions{
   
-    
-    overflow: auto;
-   
-  }
  
 
   .request-fields{
     padding-left: 250px;
     padding-right: 250px;
-    width: 60%;
+    width: 80%;
     margin:  auto;
     text-align: left;
     overflow: auto;
