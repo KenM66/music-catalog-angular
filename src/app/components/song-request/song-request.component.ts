@@ -38,7 +38,14 @@ export class SongRequestComponent {
     var artist= (<HTMLInputElement>document.getElementById('artist')).value;
     var message= (<HTMLInputElement>document.getElementById('message')).value;
 
+    var confirmMessage= "Thank you so much for requesting "+title+" by "+artist+". While I cannot guarantee that I can record every song that is requested,"+
+    " I will do my best provided the requested song is within my vocal range.  I appreciate all your support for viewing and listening to my song recordings!  I will let you know by email once this song is recorded and published!"
+
     console.log(email+" "+title+" "+artist+" "+message)
+
+    this.requestService.sendConfirmation(email, confirmMessage ).subscribe(
+      data=> console.log(data)
+    );
 
     this.requestService.sendRequest(title, artist, message, email).subscribe(
       data=>{
@@ -48,6 +55,8 @@ export class SongRequestComponent {
       }
       
     );
+
+    
 
 
    }

@@ -16,4 +16,10 @@ export class RequestService {
 
 
   }
+
+  sendConfirmation(email: string, message: string){
+
+    return this.http.post(this.URL+'confirm-receipt', {email, message});
+
+  }
 }
