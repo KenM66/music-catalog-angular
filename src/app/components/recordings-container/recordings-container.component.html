@@ -14,12 +14,13 @@
     <input id="narrow" style="margin:auto; display: block; background-color:lightgreen; color: purple" (keyup)="filterSearch($event)">
     <br/>
     <div class="center-radio" style="text-align: center; background-color: black; color: white;">
-      <input type="radio"  id="title" name="filter" value="title" checked="true" (change)="checkStatus($event)"/>
-      <label for="title" >Search By Title</label>&nbsp;
-      <input type="radio"  id="artist" name="filter" value="artist"  (change)="checkStatus($event)"/>
-      <label for="title" >Search By Artist</label>&nbsp;
-      <input type="radio"  id="genre" name="filter" value="genre"  (change)="checkStatus($event)"/>
+      <label for="title" >Search By Title</label>
+      <input type="radio"  id="title" name="filter" value="title" checked="true" (change)="checkStatus($event)"/>&nbsp;
+      <label for="title" >Search By Artist</label>
+      <input type="radio"  id="artist" name="filter" value="artist"  (change)="checkStatus($event)"/>&nbsp;
       <label for="title" >Search By Genre</label>
+      <input type="radio"  id="genre" name="filter" value="genre"  (change)="checkStatus($event)"/>
+      
     </div>
     
 
