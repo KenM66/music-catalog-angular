@@ -1,28 +1,41 @@
 
 .request-form {
     margin: auto;
-    width: 90%;
+    width: 70%;
+    height: 75vh;
     border: 3px solid black;
     padding: 10px;
     background-color: beige;
+    overflow: auto;
   }
 
   h1{
     text-align: center;
   }
 
+  .directions{
+  
+    
+    overflow: auto;
+   
+  }
+ 
+
   .request-fields{
     padding-left: 250px;
     padding-right: 250px;
-    width: 90%;
+    width: 60%;
     margin:  auto;
     text-align: left;
+    overflow: auto;
+    white-space: nowrap;
+   
   }
   
   input{
    
     background-color: aqua;
-   
+    overflow: hidden;
    
   }
 
