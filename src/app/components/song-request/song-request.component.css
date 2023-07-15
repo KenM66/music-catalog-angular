@@ -20,14 +20,14 @@
   }
   
   input{
-    width: 50%;
+   
     background-color: aqua;
    
    
   }
 
   textarea{
-    width: 100%;
+    
     background-color: aqua;
     resize: none;
    
