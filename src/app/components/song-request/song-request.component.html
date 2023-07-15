@@ -1,0 +1,40 @@
+
+<br/><br/>
+<div class="request-form">
+    <h1>Request a Song</h1>
+    <br/>
+    
+    <div class="request-fields">
+        <form [formGroup]="form" >
+        <div class="form-group">
+            <label for="e-mail">Your E-Mail</label>
+            &nbsp;
+            <input name="senderEmail" type="email" id="senderEmail"
+            size="30"  formControlName="email" >
+        </div>
+        <br/>
+        
+        <div class="form-group">
+            <label for="title">
+                Song Title
+            </label>
+            <input name="title" type="text" id="title"   style="position: relative; left: 23px;" formControlName="title" />
+        </div><br/>
+        <div class="form-group">
+            <label for="artist">Artist</label>
+            <input name="artist" type="text" id="artist"  style="position: relative; left: 55px;" formControlName="artist"/>
+        </div><br/>
+        <h5>Please include any information about why you enjoy this song, what kind of sentimental value it gives you, and why you 
+            wish for me to perform it for you.
+        </h5>
+        <br/>
+        <div class="form-group">
+            <textarea name="message" id= "message" rows="4" cols="50" formControlName="message"></textarea>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()" [disabled]="!form.valid">Submit</button>
+    </form>
+    </div>
+
+
+</div>

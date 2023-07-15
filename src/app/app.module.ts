@@ -9,6 +9,8 @@ import { RecordingsContainerComponent } from './components/recordings-container/
 import { HttpClientModule } from '@angular/common/http';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { SongRequestComponent } from './components/song-request/song-request.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,12 +18,15 @@ import { getAnalytics } from "firebase/analytics";
     AppComponent,
     RecordingComponent,
     NavbarComponent,
-    RecordingsContainerComponent
+    RecordingsContainerComponent,
+    SongRequestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   
   providers: [],
