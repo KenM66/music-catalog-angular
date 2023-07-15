@@ -1,7 +1,7 @@
 
 .request-form {
     margin: auto;
-    width: 80%;
+    width: 55%;
     border: 3px solid black;
     padding: 10px;
     background-color: beige;
@@ -14,17 +14,20 @@
   .request-fields{
     padding-left: 250px;
     padding-right: 250px;
+    width: 90%;
     margin:  auto;
     text-align: left;
   }
   
   input{
+    width: 50%;
     background-color: aqua;
    
    
   }
 
   textarea{
+    width: 100%;
     background-color: aqua;
     resize: none;
    
