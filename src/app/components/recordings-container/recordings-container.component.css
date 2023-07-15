@@ -12,14 +12,15 @@
 
 .center {
     margin: auto;
-    width: 80%;
+    width: 50%;
+    
     border: 3px solid green;
     padding: 10px;
   }
 
   .center-radio {
     margin: auto;
-    width: 80%;
+    width: 70%;
     border: 3px solid purple;
     padding: 10px;
   }
@@ -45,7 +46,7 @@
    overflow-y: scroll;
    border: 1px solid black;
     padding: 10px;
-    height: 500px;
+    height: 300px;
   }
 
   th {
